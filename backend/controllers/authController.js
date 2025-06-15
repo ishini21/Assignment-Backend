@@ -1,7 +1,7 @@
 import {createUser,getUserByEmail} from '../models/userModel.js'
 import bcrypt from 'bcrypt'
-
-const SALT_ROUNDS = 12;
+import dotenv from 'dotenv'
+dotenv.config();
 
 export const register = async (req, res) => {
   const { name, email, password } = req.body;
