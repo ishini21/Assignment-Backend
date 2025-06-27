@@ -5,8 +5,8 @@ export const productValidationRules = [
     .notEmpty().withMessage('Name is required'),
 
   body('price')
-    .notEmpty().withMessage('Price is required')
-    .isInt({ gt: 0 }).withMessage('Price must be a positive integer'),
+  .notEmpty().withMessage('Price is required')
+  .isFloat({ gt: 0 }).withMessage('Price must be a positive number'),
 
   body('quantity')
     .notEmpty().withMessage('Quantity is required')

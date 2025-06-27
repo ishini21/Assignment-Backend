@@ -41,7 +41,7 @@ const Login = () => {
             </Link></p>
         </div>
 
-        {message && <p className="mt-4 text-center text-primary font-medium">{message}</p>}
+        {message && <p className="mt-4 text-center text-green-700 font-medium">{message}</p>}
       </form>
     </div>
   );

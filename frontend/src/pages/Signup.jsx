@@ -42,7 +42,7 @@ const Signup = () => {
             </Link></p>
         </div>
 
-        {message && <p className="mt-4 text-center text-accent font-medium">{message}</p>}
+        {message && <p className="mt-4 text-center text-accent text-green-700 font-medium">{message}</p>}
       </form>
     </div>
   );

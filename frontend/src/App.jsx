@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ProductList from "./pages/ProductList";
-import AddProduct from "./pages/AddProduct";
+import ProductForm from "./components/ProductForm";
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
       <Route path="/" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/product-list" element={<ProductList />} />
-      <Route path="/add-product" element={<AddProduct />} />
+      <Route path="/product-form" element={<ProductForm />} />
+      <Route path="/product-form/:id" element={<ProductForm />} />
     </Routes>
   );
 }
