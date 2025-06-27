@@ -56,11 +56,11 @@ const AddProduct = () => {
         onSubmit={handleSubmit}
         className="bg-pink-100 p-8 rounded-lg shadow-md w-full max-w-md"
       >
-        <div className="flex justify-between">
+        <div className="flex justify-between items-baseline ">
         <h2 className="text-2xl font-bold text-accent mb-6 flex justify-center text-pink-700">
          {id ? "Edit Product" : "Add Product"}
         </h2>
-        <Link to='/product-list'><span className='text-black cursor-pointer underline'>Back to ProductList</span></Link>
+        <Link to='/product-list'><span className='text-purple-900 cursor-pointer underline'>Back to ProductList</span></Link>
         </div>
 
         <input
